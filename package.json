@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "npm run fetch-fonts && npm run fetch-favicons && astro dev",
-    "build": "npm run create-netlify-config && npm run fetch-fonts && npm run fetch-favicons && astro build && npm run fetch-redirects",
+    "build": "npm run fetch-fonts && npm run fetch-favicons && astro build && npm run fetch-redirects",
     "preview": "astro preview",
     "astro": "astro",
     "fetch-fonts": "node --experimental-modules fonts.mjs",
@@ -13,7 +13,6 @@
     "create-storyblok-structure": "node --experimental-modules ./create-storyblok-structure/create-structure.mjs",
     "get-storyblok-structure": "node --experimental-modules ./create-storyblok-structure/get-initial-struct.mjs",
     "get-storyblok-stories": "node --experimental-modules ./create-storyblok-structure/get-stories.mjs",
-    "create-netlify-config": "node --experimental-modules ./netlify.mjs"
   },
   "dependencies": {
     "@astro-community/astro-embed-youtube": "^0.5.6",
