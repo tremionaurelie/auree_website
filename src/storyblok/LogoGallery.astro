@@ -20,7 +20,13 @@ blok.logos?.map((item) => (item.isSvg = item.filename.endsWith('.svg')))
         <li class="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 mx-auto sm:mx-0 text-base-content/50 flex justify-center">
           {logo.isSvg && <InlineSvg src={logo.filename} />}
           {!logo.isSvg && logo.filename && (
-            <Image src={logo.filename} alt={logo.alt} class="rounded-[var(--radius-box)]" inferSize />
+            <Image
+              src={logo.filename}
+              alt={logo.alt}
+              class="rounded-[var(--radius-box)]"
+              layout="constrained"
+              inferSize
+            />
           )}
         </li>
       ))

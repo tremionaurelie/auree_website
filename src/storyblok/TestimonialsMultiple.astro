@@ -26,6 +26,7 @@ const { blok } = Astro.props
                 alt={testimonial.image.filename}
                 priority={testimonial.image.loading === 'eager' ? true : false}
                 class="mx-auto w-20 h-auto sm:w-28 rounded-[var(--radius-box)]"
+                layout="constrained"
                 inferSize
               />
             )}

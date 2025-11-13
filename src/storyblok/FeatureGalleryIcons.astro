@@ -34,7 +34,13 @@ blok.icons?.map((icon) => {
           data-aos-duration={500 + idx * 250}>
           {icon?.image && icon.image?.isSvg && <InlineSvg src={icon.image.filename} />}
           {icon?.image && !icon.image.isSvg && icon.image?.filename && (
-            <Image src={icon.image.filename} alt={icon.image.alt} class="w-12 rounded-[var(--radius-box)]" inferSize />
+            <Image
+              src={icon.image.filename}
+              alt={icon.image.alt}
+              layout="constrained"
+              class="w-12 rounded-[var(--radius-box)]"
+              inferSize
+            />
           )}
           <div class="mt-2 sm:mt-6">
             <Heading classlist="sm:text-lg font-semibold" tag={icon.tag} content={icon.title} />
@@ -53,6 +59,7 @@ blok.icons?.map((icon) => {
               alt={image.alt}
               class="size-full object-cover object-center rounded-[var(--radius-box)]"
               priority={image.loading === 'eager' ? true : false}
+              layout="constrained"
               inferSize
             />
           )}

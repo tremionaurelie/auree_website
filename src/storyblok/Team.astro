@@ -25,6 +25,7 @@ const { blok } = Astro.props
                     alt={person.image.alt}
                     class="object-cover mx-auto rounded-[var(--radius-box)] size-full lg:size-36"
                     priority={person.image.loading === 'eager' ? true : false}
+                    layout="constrained"
                     inferSize
                   />
                 )}
@@ -45,6 +46,7 @@ const { blok } = Astro.props
                   alt={person.image.alt}
                   class="object-cover mx-auto rounded-[var(--radius-box)] size-full lg:size-36"
                   priority={person.image.loading === 'eager' ? true : false}
+                  layout="constrained"
                   inferSize
                 />
               )}

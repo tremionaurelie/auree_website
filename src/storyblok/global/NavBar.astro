@@ -20,7 +20,13 @@ const currentPath = Astro.url.pathname
         }
         {
           logo?.filename && !logo.filename.endsWith('.svg') && (
-            <Image src={logo.filename} alt={name} class="pure max-h-[90px] h-auto w-auto max-w-64" inferSize />
+            <Image
+              src={logo.filename}
+              alt={name}
+              class="pure max-h-[90px] h-auto w-auto max-w-64"
+              layout="constrained"
+              inferSize
+            />
           )
         }
       </a>

@@ -22,6 +22,7 @@ const { blok } = Astro.props
           alt={blok.image.filename}
           class="rounded-[var(--radius-box)] mx-auto w-20 h-auto sm:w-28"
           priority={blok.image.loading === 'eager' ? true : false}
+          layout="constrained"
           inferSize
         />
       )

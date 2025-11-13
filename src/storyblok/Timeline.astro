@@ -16,7 +16,9 @@ blok.timeline.map((item) => (item.isSvg = item.image?.filename.endsWith('.svg'))
           {item.image && (
             <div class="relative z-10 size-6 flex justify-center items-center">
               {item.isSvg && <InlineSvg src={item.image.filename} />}
-              {!item.isSvg && item.image.filename && <Image src={item.image.filename} alt={item.image.alt} inferSize />}
+              {!item.isSvg && item.image.filename && (
+                <Image src={item.image.filename} alt={item.image.alt} layout="constrained" inferSize />
+              )}
             </div>
           )}
         </div>

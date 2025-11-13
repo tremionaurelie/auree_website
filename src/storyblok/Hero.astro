@@ -29,6 +29,7 @@ let foregroundColor = blok.foregroundColorInvert ? 'text-base-100' : 'text-base-
             alt={blok.image.alt}
             class="max-h-screen object-cover h-full"
             priority={blok.image.loading === 'eager' ? true : false}
+            layout="constrained"
             inferSize
           />
         )}
@@ -53,6 +54,7 @@ let foregroundColor = blok.foregroundColorInvert ? 'text-base-100' : 'text-base-
                 alt={blok.image.alt}
                 class="max-w-full sm:max-w-sm md:max-w-md rounded-[var(--radius-box)] shadow-2xl"
                 priority={blok.image.loading === 'eager' ? true : false}
+                layout="constrained"
                 inferSize
               />
             </div>

@@ -11,6 +11,7 @@ const { blok } = Astro.props
         alt={blok.image.alt}
         class="rounded-[var(--radius-box)] h-full w-auto"
         priority={blok.image.loading === 'eager' ? true : false}
+        layout="full-width"
         inferSize
       />
     </section>
