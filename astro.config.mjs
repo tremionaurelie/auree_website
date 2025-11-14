@@ -93,6 +93,7 @@ export default defineConfig({
   adapter: vercel({
     imageService: true,
     imagesConfig: {
+      minimumCacheTTL: 86400,
       sizes: [300, 720, 1080, 1560, 1920, 2560],
       remotePatterns: [
         {
