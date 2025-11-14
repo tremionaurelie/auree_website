@@ -21,6 +21,7 @@
     "@storyblok/astro": "^6.1.1",
     "@tailwindcss/vite": "^4.1.4",
     "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "aos": "^2.3.4",
     "astro": "^5.7.12",
     "clone-deep": "^4.0.1",

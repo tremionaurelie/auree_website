@@ -4,6 +4,7 @@ import Footer from '../storyblok/global/Footer.astro'
 import NavBar from '../storyblok/global/NavBar.astro'
 import { useStoryblokApi } from '@storyblok/astro'
 import isPreview from '../utils/isPreview'
+import SpeedInsights from '@vercel/speed-insights/astro'
 
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories/global/navigation', {
@@ -65,6 +66,8 @@ const logo = logoData.story.content.logo
     ogImageAlt={ogImageAlt}
     schema={schema}
   />
+  <SpeedInsights />
+
   <body class="is-loading overflow-x-hidden">
     <NavBar logo={logo} name="myCompany" menu={menu} breakpoint="sm" />
     <main>
@@ -202,5 +205,5 @@ const logo = logoData.story.content.logo
         }
       })()
     </script>
-  </body>
-</html>
+  </body></html
+>
