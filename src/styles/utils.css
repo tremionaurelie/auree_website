@@ -20,4 +20,8 @@
   .pure {
     stroke: unset !important;
   }
+
+  .featureSimple:nth-of-type(odd) figure{
+    order: 2;
+  }
 }
